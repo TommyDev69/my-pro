@@ -16,7 +16,9 @@ export default function MainFooter() {
       <FootBody About = {footer.filter((about) => about.id === 1)} 
         getInTouch = {footer.filter((touch)=>touch.id===2)}
         Page = {footer.filter((page)=>page.id===3)}
-        Subscribe= {footer.filter((subscribe)=>subscribe.id===4)}      
+        Subscribe= {footer.filter((subscribe)=>subscribe.id===4)}   
+         iconic={faGreaterThan}   
+        icon_2={faPaperPlane}   
       />
     </div>
   )

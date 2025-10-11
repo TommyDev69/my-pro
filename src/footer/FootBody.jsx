@@ -3,19 +3,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function FootBody({About, getInTouch, Page,Subscribe, iconic, icon_2}) {
   return (
-    <div className='grid grid-cols-2 md:grid-cols-4 space-x-12 be container mx-auto px-24  g-[#051922cc] p-7'>
+    <div className='grid grid-cols-2 md:grid-cols-4 md:gap-x-12  md:container mx-auto px-6  py-24'>
       {About.map((about_data) =>(
-        <div className="py-24 w-10/12 " key={about_data.id}>
-            <p className="text-[32px] font-bold text-white capitalize py-12">{about_data.Topic}</p>
-            <p className="text-[14px] text-white w-full">{about_data.content}</p>
+        <div className="md:space-y-12 w-10/12 " key={about_data.id}>
+            <p className="md:text-[32px] text-[18px] font-bold text-white capitalize py-12">{about_data.Topic}</p>
+            <p className="md:text-[14px] text-white w-full">{about_data.content}</p>
         </div>
         
       ))}
 
        {getInTouch.map((getting_data) =>(
-        <div className="py-24 w-10/12" key={getting_data.id}>
-            <p className="text-[32px] font-bold text-white capitalize py-12">{getting_data.Topic}</p>
-            <div className='text-[14px] text-white w-full'>
+        <div className="md:space-y-12 w-10/12" key={getting_data.id}>
+            <p className="md:text-[32px] text-[18px] font-bold text-white capitalize py-12">{getting_data.Topic}</p>
+            <div className='md:text-[14px] text-white w-full'>
                 <p>{getting_data.address}</p>
                 <p className="py-2">{getting_data.email}</p>
                 <p className="">{getting_data.contact}</p>
@@ -25,9 +25,9 @@ export default function FootBody({About, getInTouch, Page,Subscribe, iconic, ico
          ))}
 
           {Page.map((page_data) =>(
-        <div className="py-24 w-10/12" key={page_data.id}>
-            <p className="text-12 md:text-[32px] font-bold text-white capitalize py-12">{page_data.Topic}</p>
-            <div className=' text-[14px] text-white w-full font-bold '>
+        <div className="md:space-y-12 w-10/12" key={page_data.id}>
+            <p className="text-[18px] md:text-[32px] font-bold text-white capitalize py-12">{page_data.Topic}</p>
+            <div className=' md:text-[14px] text-white w-full font-bold '>
                <div className="flex pb-4">
                  <FontAwesomeIcon  icon = {iconic}  className='text-[rgb(242,129,35)] '/>
                 <p className="capitalize text hover:text-[rgb(242,129,35)]">home</p>
@@ -54,13 +54,13 @@ export default function FootBody({About, getInTouch, Page,Subscribe, iconic, ico
          ))}
 
           {Subscribe.map((subscribe) =>(
-        <div className="py-24 w-10/12" key={subscribe.id}>
-            <p className="text-12 md:text-[32px] font-bold text-white capitalize py-12">{subscribe.Topic}</p>
-            <p className="text-[14px] text-white w-full">{subscribe.content}</p>
+        <div className="md:space-y-12 w-10/12" key={subscribe.id}>
+            <p className="text-[18px] md:text-[32px] font-bold text-white capitalize py-12">{subscribe.Topic}</p>
+            <p className="md:text-[14px] text-white w-full">{subscribe.content}</p>
             <form className="py-5">
                 <div className="py-4 flex">
-                    <input type="email" placeholder='Email' className='p-4  text-[16px] rounded-xl focus:placeholder-[rgb(242,129,35)] focus-within:bg-[#051922cc] focus-within: text-white border-[#051922cc]' />
-                    <button  className='border-2 py-4'><FontAwesomeIcon icon={icon_2} />send</button>
+                    <input type="email" placeholder='Email' className='md:p-4 focus:p-1  md:text-[16px] rounded-xl focus:placeholder-[rgb(242,129,35)] focus-within:bg-[#051922cc] focus-within: text-white border-[#051922cc]' />
+                    <button  className='border-2 md:mx-2 border-slate-500 rounded-xl md:py-4 md:px-6 px-4 md:text-[14px] text-[rgb(242,129,35)]'><FontAwesomeIcon icon={icon_2} /></button>
                 </div>
             </form>
 
