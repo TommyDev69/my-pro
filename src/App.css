@@ -1,19 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
+/* .App-logo {
+  height: 20vmin;
+
+} */
+
+/*658 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 1s linear;
   }
+} */
+
+.navCont{
+   min-height:100vh;
+   background-color: #051922cc;
+   /* fill-opacity: 2px; */
+   background-image: url("./image/hero-bg.jpg");
+   background-position: center;
+   background-size: cover;
 }
 
-.App-header {
+.promo{
+  min-height:50vh;
+  background-image: url('./image/hero-bg-3.jpg');
+}
+
+.fruit{
+  background-image: url("./image/abt.png");
+  background-position:center;
+   background-size:cover;
+   /* background-repeat: no-repeat; */
+   /* background-attachment: fixed; */
+   background-position: center top;
+   height: 350px;
+  
+   
+}
+
+.December{
+  min-height:30vh;
+  background-image: url('./image/1.jpg');
+   background-position:center;
+   /* background-size:; */
+   background-position: left  top;
+
+}
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +74,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
