@@ -1,5 +1,5 @@
 import Fresh from "../NavBody/Fresh";
-import DropNav from "./DropNav";
+
 import NavContainer from "./NavContainer";
 
 const Main = () => {
@@ -7,7 +7,7 @@ const Main = () => {
         <div className="navCont container-fluld bg-blend-multiply">
 
             <NavContainer/>
-            {/* <DropNav /> */}
+           
             <Fresh />
         </div>
      );

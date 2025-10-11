@@ -30,23 +30,23 @@ export default function FootBody({About, getInTouch, Page,Subscribe, iconic, ico
             <div className=' md:text-[14px] text-white w-full font-bold '>
                <div className="flex pb-4">
                  <FontAwesomeIcon  icon = {iconic}  className='text-[rgb(242,129,35)] '/>
-                <p className="capitalize text hover:text-[rgb(242,129,35)]">home</p>
+                <p className="capitalize text hover:text-[rgb(242,129,35)] pl-2">home</p>
+               </div>
+               <div className="flex py-4">
+                 <FontAwesomeIcon  icon = {iconic}  className='text-[rgb(242,129,35)] py-2'/>
+                <p className="capitalize text hover:text-[rgb(242,129,35)] pl-2">about</p>
                </div>
                <div className="flex py-4">
                  <FontAwesomeIcon  icon = {iconic}  className='text-[rgb(242,129,35)]'/>
-                <p className="capitalize text hover:text-[rgb(242,129,35)]">about</p>
+                <p className="capitalize text hover:text-[rgb(242,129,35)] pl-2">shop</p>
                </div>
                <div className="flex py-4">
                  <FontAwesomeIcon  icon = {iconic}  className='text-[rgb(242,129,35)]'/>
-                <p className="capitalize text hover:text-[rgb(242,129,35)]">shop</p>
+                <p className="capitalize text hover:text-[rgb(242,129,35)] pl-2">contact</p>
                </div>
                <div className="flex py-4">
                  <FontAwesomeIcon  icon = {iconic}  className='text-[rgb(242,129,35)]'/>
-                <p className="capitalize text hover:text-[rgb(242,129,35)]">contact</p>
-               </div>
-               <div className="flex py-4">
-                 <FontAwesomeIcon  icon = {iconic}  className='text-[rgb(242,129,35)]'/>
-                <p className="capitalize text hover:text-[rgb(242,129,35)]">news</p>
+                <p className="capitalize text hover:text-[rgb(242,129,35)] pl-2">news</p>
                </div>   
             </div>
 

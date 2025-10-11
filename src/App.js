@@ -2,6 +2,8 @@
 import './App.css';
 import MainDec from './December/MainDec.';
 import MainFooter from './footer/MainFooter';
+import LastFooter from './last footer/LastFooter';
+import MainLastfooter from './last footer/MainLastFooter';
 import Main from './Nav/Main';
 import MainNews from './newsProduct/MainNews';
 import MainProduct from './product/MainProduct';
@@ -23,6 +25,7 @@ function App() {
      <MainDec />
      <MainNews />
      <MainFooter />
+    <MainLastfooter />
     </div>
   );
 }
