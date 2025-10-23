@@ -87,7 +87,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
               </Link>
             </div>
           </div>
-          <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">contact</Link>
+          <Link to="/Contact" className="capitalize text-2xl transition hover:text-[#F28123]">contact</Link>
 
           <div className="relative group" onMouseEnter={() =>setHover('shop')}
              onMouseLeave={() =>setHover(null)}>

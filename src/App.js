@@ -18,6 +18,7 @@ import AboutTeam from './about_team/AboutTeam';
 import MainCart from './Cart/MainCart';
 // import CartBody from './Cart_Backgound/CartBody';
 import CartContect from './Cart_Backgound/CartContect';
+import MainContact from './contact/MainContact';
 
 
 function App() {
@@ -67,6 +68,14 @@ function App() {
             <NavContainer />
             <CartContect />
             <MainCart />
+            <Mainslide />
+            <MainFooter />
+            <MainLastfooter />
+            </>} />
+
+
+             <Route path='/Contact' caseSensitive={false} element = {<>
+            <MainContact />
             <Mainslide />
             <MainFooter />
             <MainLastfooter />
