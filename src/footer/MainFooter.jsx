@@ -12,7 +12,7 @@ export default function MainFooter() {
     ])
 
   return (
-    <div className='bg-[#051922cc]'>
+    <div className='bg-[#051922]'>
       <FootBody About = {footer.filter((about) => about.id === 1)} 
         getInTouch = {footer.filter((touch)=>touch.id===2)}
         Page = {footer.filter((page)=>page.id===3)}

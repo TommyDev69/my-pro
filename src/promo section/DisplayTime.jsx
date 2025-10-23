@@ -15,7 +15,7 @@ const DisplayTime = ({TimeLeft}) => {
     );
   }
     return ( 
-        <div className="flex items-center space-x-4 md:space-x-6 ">
+        <div className="flex items-center space-x-1 md:space-x-6 ">
             <div className="flex flex-col  border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
                 <p className="md:text-[28px] font-bold p-2 md:p-4 font-bitcount">{TimeLeft.days} </p>
                 <p className="text-md md:text-2xl capitalize">days</p>

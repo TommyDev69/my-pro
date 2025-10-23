@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import NavEmojis from "./NavEmojis";
-
+import { Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
   const link = "#";
@@ -18,9 +19,9 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
             onMouseEnter={() => setHover("home")}
             onMouseLeave={() => setHover(null)}
           >
-            <a href={link} className="capitalize text-2xl transition font-bold hover:text-[#F28123]">
+            <Link to="/" className="capitalize text-2xl transition font-bold hover:text-[#F28123]">
               home
-            </a>
+            </Link>
 
             <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
@@ -29,15 +30,16 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
                   : "opacity-0 translate-y-2 invisible"
               }`}
             >
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
                 static home
-              </a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
+              </Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
                 slider home
-              </a>
+              </Link>
             </div>
           </div>
-          <a href={link} className="capitalize text-2xl transition hover:text-[#F28123]">about</a>
+
+          <Link to="/About" className="capitalize text-2xl transition hover:text-[#F28123]">about</Link>
 
           {/* PAGE DROPDOWN */}
           <div
@@ -45,9 +47,9 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
             onMouseEnter={() => setHover("page")}
             onMouseLeave={() => setHover(null)}
           >
-            <a href={link} className="capitalize text-2xl transition hover:text-[#F28123]">
+            <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">
               page
-            </a>
+            </Link>
 
             <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
@@ -56,20 +58,20 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
                   : "opacity-0 translate-y-2 invisible"
               }`}
             >
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">404 page</a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">about</a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">cart</a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">check out</a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">contact</a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">news</a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">shop</a>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">404 page</Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">about</Link>
+              <Link to="/Cart" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">cart</Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">check out</Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">contact</Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">news</Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">shop</Link>
             </div>
           </div>
 
           {/* OTHER LINKS */}
           <div className="relative group" onMouseEnter={() =>setHover('news')}
              onMouseLeave={() =>setHover(null)}>
-          <a href={link} className="capitalize text-2xl transition hover:text-[#F28123]">news</a>
+          <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">news</Link>
              <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
                 hoverToggle === "news"
@@ -77,19 +79,19 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
                   : "opacity-0 translate-y-2 invisible"
               }`}
             >
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
                 news
-              </a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
+              </Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
                 single news
-              </a>
+              </Link>
             </div>
           </div>
-          <a href={link} className="capitalize text-2xl transition hover:text-[#F28123]">contact</a>
+          <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">contact</Link>
 
           <div className="relative group" onMouseEnter={() =>setHover('shop')}
              onMouseLeave={() =>setHover(null)}>
-          <a href={link} className="capitalize text-2xl transition hover:text-[#F28123]">shop</a>
+          <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">shop</Link>
            <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
                 hoverToggle === "shop"
@@ -97,18 +99,39 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
                   : "opacity-0 translate-y-2 invisible"
               }`}
             >
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
                 shop
-              </a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
+              </Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
                 check out
-              </a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
+              </Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
                 single product
-              </a>
-              <a href={link} className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
+              </Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
                 cart
-              </a>
+              </Link>
+            </div>
+        </div>
+
+         <div className="relative group" onMouseEnter={() =>setHover('register')}
+             onMouseLeave={() =>setHover(null)}>
+          <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">register</Link>
+           <div
+              className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
+                hoverToggle === "register"
+                  ? "opacity-100 translate-y-1 visible"
+                  : "opacity-0 translate-y-2 invisible"
+              }`}
+            >
+              
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
+                sign up
+              </Link>
+              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
+                sign in
+              </Link>
+              
             </div>
         </div>
         </div>

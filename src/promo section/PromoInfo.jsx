@@ -10,7 +10,7 @@ const PromoInfo = ({title, content,TimeLeft}) => {
         </div>
        <div className="flex flex-col justify-center w-full">
          <p className="md:text-[34px] text-[24px] font-bitcount uppercase">{title}</p>
-        <p className="md:text-[18px]  pb-14">{content}</p>
+        <p className="md:text-[18px] text-[12px]  pb-14">{content}</p>
        </div>
        <DisplayTime TimeLeft= {TimeLeft} />
         </div>

@@ -7,15 +7,17 @@ import DropNav from "./DropNav";
 const NavContainer = () => {
   const[openToggle, setToggle] =useState(false)
   const [hoverToggle, setHoverToggle] = useState(null)
+  // const[openMenu, setOpenMenu] =useState(false);
+
  return(
 
  <div>
 
-    <div className='  flex justify-between space-x-10 max-w-screen bg-[#051922cc] h-32 z-1'>
+    <div className=' fixed top-0 left-0 w-full z-50 flex justify-between space-x-10 max-w-screen bg-[#051922] h-32 z-1'>
       <NavBrand  />
       <NavContent hoverToggle={hoverToggle} setHover={setHoverToggle} openToggle={openToggle} onMenuClick={() => setToggle(!openToggle)} />
     </div>
-         {openToggle && <DropNav />}
+         {openToggle && <DropNav/>}
  </div>
   )
 }

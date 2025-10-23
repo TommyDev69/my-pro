@@ -36,13 +36,22 @@
   background-image: url("./image/abt.png");
   background-position:center;
    background-size:cover;
-   /* background-repeat: no-repeat; */
    /* background-attachment: fixed; */
    background-position: center top;
    height: 350px;
   
    
 }
+
+.general{
+  background-image: url('./image/breadcrumb-bg.jpg');
+  background-position: center;
+  background-position: center bottom;
+   background-size:cover;
+   height: 500px;
+}
+
+
 
 .December{
   min-height:30vh;

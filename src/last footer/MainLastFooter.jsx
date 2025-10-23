@@ -12,7 +12,7 @@ const MainLastfooter = () => {
         {id:5, icon:faDiscord }
     ])
     return ( 
-        <div className="bg-[#051922cc] border-t-2  border-t-[#8f8f8f]">
+        <div className="bg-[#051922] border-t-2  border-t-[#8f8f8f]">
             <LastFooter  Media={socialMedia} Ceo={Owner} title="all rights reserved" />
         </div>
      );

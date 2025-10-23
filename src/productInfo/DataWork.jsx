@@ -6,7 +6,7 @@ export default function DataWork({ HandleVideo, closeModal, isPlaying, videoRef,
   return (
     <div className="grid md:grid-cols-2 justify-items-center gap-8">
       
-      <div className="relative fruit w-full md:w-8/12 flex justify-center items-center rounded-3xl bg-slate-400  overflow-hidden">
+      <div className="relative fruit w-11/12 md:w-8/12 flex justify-center items-center rounded-3xl bg-slate-400  overflow-hidden">
        
         <FontAwesomeIcon
           icon={faPlayCircle}
