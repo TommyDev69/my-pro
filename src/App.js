@@ -19,6 +19,13 @@ import MainCart from './Cart/MainCart';
 // import CartBody from './Cart_Backgound/CartBody';
 import CartContect from './Cart_Backgound/CartContect';
 import MainContact from './contact/MainContact';
+import ContactHead from './contact_Show/ContactHead';
+import ErrorMessage from './404/ErrorMessage';
+import ErrorBody from './404 body/ErrorBody';
+import MainCheck from './CheckOut/MainCheak';
+import MainCheak from './CheckOut/MainCheak';
+import MainSource from './CheckOut/MainSource';
+import CheckContent from './CheckOut/CheckContent';
 
 
 function App() {
@@ -75,11 +82,31 @@ function App() {
 
 
              <Route path='/Contact' caseSensitive={false} element = {<>
+            <NavContainer />
+             <ContactHead />
             <MainContact />
             <Mainslide />
             <MainFooter />
             <MainLastfooter />
             </>} />
+
+            <Route path = "/404" caseSensitive = {false} element ={<>
+            <NavContainer />
+            <ErrorMessage />
+            <ErrorBody />
+             <Mainslide />
+            <MainFooter />
+            <MainLastfooter />
+            </>}/>
+
+            <Route path='/Checkout' caseSensitive={false} element ={<>
+            <NavContainer />
+            <ErrorMessage />
+
+            <MainSource />
+            {/* <CheckContent /> */}
+            </>} />
+            
         </Routes>
       </div>
         

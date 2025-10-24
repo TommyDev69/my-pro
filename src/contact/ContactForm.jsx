@@ -3,10 +3,10 @@ import ContactDetails from './ContactDetails'
 
 export default function ContactForm({title}) {
   return (
-    <div className='flex flex-col md:flex md:flex-row'>
+    <div className='flex flex-col md:flex md:flex-row py-24'>
       <div className="leading-snug  md:w-8/12 py-12">
-        <p className="font-bold capitalize text-[26px] px-7">{title}</p>
-        <p className="md:text-[16px] w-full px-8 pt-4 pb-10">
+        <p className="font-bold capitalize text-[26px] px-8 md:px-20">{title}</p>
+        <p className="md:text-[16px] w-full px-8 md:px-20 pt-4 pb-10">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque perspiciatis, obcaecati nulla modi libero ratione neque ut impedit dolor
              iusto, cumque optio fugit. Voluptatum autem placeat vero itaque cumque tempore.
         </p>
