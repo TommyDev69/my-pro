@@ -5,7 +5,7 @@ export default function FormCheck() {
   return (
     // <div>
       <form action="">
-         <div className='w-full bg-red-500'> jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+         <div className='w-fulsl bg-red-500'> jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
             {/* <input type='text' className='border-2 border-[#e8e8e8] we-full' placeholder='Name' /> */}
          </div>
       </form>
