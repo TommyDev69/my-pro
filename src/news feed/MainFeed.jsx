@@ -10,11 +10,10 @@ import  Team_2 from'../image/team/team-2.jpg'
 import { faGreaterThan, faUser, faCalendar} from "@fortawesome/free-solid-svg-icons";
 
 import { useState } from 'react';
-import NewsCard from './NewsCard';
+// import NewsCard from './NewsCard';
 import AllNews from '../news feed/AllNews';
-
-const MainNews = () => {
-    const [showAll, setShowAll] = useState(false);
+const MainFeed = () => {
+  
     const [news, setNews] =useState([
         {id:1, image:new1, topic:'You will vainly look for fruit on it in autumn.', but:"read more", icon: faGreaterThan,  content:'Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.'},
         {id:2, image:new2, topic: "A man's worth has its season, like tomato.", but:"read more", icon: faGreaterThan,  content:"Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros."},
@@ -27,10 +26,11 @@ const MainNews = () => {
     ])
     return (  
         <div>
-          <NewsCard Data={news.slice(0, 3)} icon_1={faUser} icon_2={faCalendar} />
-            {showAll && <AllNews AllData = {news.slice(0,6)} icon_1={faUser} icon_2={faCalendar} />}
+          
+            <AllNews AllData = {news.slice(0,6)} icon_1={faUser} icon_2={faCalendar} />
         </div>
     );
+
 }
  
-export default MainNews;
+export default MainFeed;

@@ -14,12 +14,13 @@ const MainProduct = () => {
             {id:1, Image:img1, Name:'strawberry', weight:"per kg", amount:'#1100', icon: faCartPlus, iconName:'add to cart'},
             {id:1, Image:img2, Name:'berry', weight:"per kg", amount:'#3500', icon: faCartPlus, iconName:'add to cart'},
             {id:1, Image:img3, Name:'lemon', weight:"per kg", amount:'#800', icon: faCartPlus, iconName:'add to cart'},
-            {id:1, Image:img4, Name:'strawberry', weight:"per kg", amount:'#2100', icon: faCartPlus, iconName:'add to cart'}
+            {id:1, Image:img4, Name:'avocado', weight:"per kg", amount:'#2100', icon: faCartPlus, iconName:'add to cart'}
 
     ])
+
     return (  
         <div className="flex flex-col  justify-ceqqnter items-center py-40">
-            <div className="md:text-[35px] text-[20px]  font-700 flex font-workswans">
+            <div className="md:text-[35px] text-[20px] pb-20  font-bold flex font-workswans">
                 <p className="text-[rgb(242,129,35)] pr-1">Our</p>
                 P <p className="flex"> <span className="border-b-2 border-solid border-[#F28123]">ro</span>ducts</p>
                 

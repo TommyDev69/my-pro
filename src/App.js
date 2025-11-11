@@ -16,31 +16,25 @@ import NavContainer from './Nav/NavContainer';
 import AboutService from './why/AboutService';
 import AboutTeam from './about_team/AboutTeam';
 import MainCart from './Cart/MainCart';
-// import CartBody from './Cart_Backgound/CartBody';
+
 import CartContect from './Cart_Backgound/CartContect';
 import MainContact from './contact/MainContact';
 import ContactHead from './contact_Show/ContactHead';
 import ErrorMessage from './404/ErrorMessage';
 import ErrorBody from './404 body/ErrorBody';
-import MainCheck from './CheckOut/MainCheak';
-import MainCheak from './CheckOut/MainCheak';
 import MainSource from './CheckOut/MainSource';
-import CheckContent from './CheckOut/CheckContent';
+import CheckHead from './Check/CheckHead';
+import MainSingle from './single product/MainSingle';
+import MainPro from './product single/MainPro';
+import MainSingleNews from './Single News/MainSingleNews';
+import MainFeed from './news feed/MainFeed';
 
 
 function App() {
   return (
-    // <div className="App">
-    //   {/* <Main /> */}
-    //   <About />
-    // </div>
+  
     <Router>
       <div className="App">
-
-        {/* ✅ Move your navigation inside Router */}
-       
-
-        {/* ✅ All Routes must be inside Router */}
         <Routes>
           {/* Main route */}
           <Route path="/" element={
@@ -101,11 +95,38 @@ function App() {
 
             <Route path='/Checkout' caseSensitive={false} element ={<>
             <NavContainer />
-            <ErrorMessage />
-
+            <CheckHead />
             <MainSource />
-            {/* <CheckContent /> */}
+            <Mainslide />
+            <MainFooter />
+            <MainLastfooter />
             </>} />
+
+            <Route path='/Single_Product' caseSensitive = {false} element = {<>
+              <NavContainer />
+              <MainPro />
+              <MainSingle />
+              <MainProduct />
+              <Mainslide />
+              <MainFooter />
+              <MainLastfooter />
+            
+            </>}/>
+
+            <Route path = '/Single_News' caseSensitive = {false} element = {<>
+              <NavContainer />
+              <MainPro />
+              <MainSingleNews />
+              <Mainslide />
+              <MainFooter />
+              <MainLastfooter />
+            </>} />
+
+            <Route path = '/News' caseSensitive = {false} element = {<>
+            <NavContainer />
+              <MainPro />
+              <MainFeed />
+            </>}/>
             
         </Routes>
       </div>

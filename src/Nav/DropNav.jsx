@@ -1,6 +1,8 @@
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const DropNav = () => {
   const link = "#";
@@ -21,9 +23,9 @@ const DropNav = () => {
 
             {/* HOME */}
             <div className="flex bg-[#F28123] p-5">
-            <a href={link} className="capitalize w-11/12 text-2xl font-bold transition">
+            <Link to="/" className="capitalize w-11/12 text-2xl font-bold transition">
                 home
-            </a>
+            </Link>
             <FontAwesomeIcon
                 className="py-2 cursor-pointe bg-slate-700 border-[#ccc] border-2 p-2 rounded-xl"
                 icon={homeOpen ? faMinus : faPlus}
@@ -39,7 +41,7 @@ const DropNav = () => {
 
             {/* ABOUT */}
             <div className="flex p-5 hover:bg-[#F28123] transition-all">
-            <a href={link} className="capitalize w-11/12 text-2xl">about</a>
+            <Link to ="/About" className="capitalize w-11/12 text-2xl">about</Link>
             </div>
             
 
@@ -54,13 +56,13 @@ const DropNav = () => {
             </div>
             {pageOpen && (
             <div className="bg-[#00000044] text-lg text-white px-4">
-                <a href={link} className="block py-6 uppercase hover:bg-[#F28123]">404 page</a>
-                <a href={link} className="block py-6 uppercase  hover:bg-[#F28123]">about</a>
-                <a href={link} className="block py-6 uppercase  hover:bg-[#F28123]">cart</a>
-                <a href={link} className="block py-6 uppercase  hover:bg-[#F28123]">check out</a>
-                <a href={link} className="block py-6 uppercase  hover:bg-[#F28123]">contact</a>
-                <a href={link} className="block py-6 uppercase  hover:bg-[#F28123]">news</a>
-                <a href={link} className="block py-6 uppercase  hover:bg-[#F28123]">shop</a>
+                <Link to ="/404" className="block py-6 uppercase hover:bg-[#F28123]">404 page</Link>
+                <Link to ="/a   bout" className="block py-6 uppercase  hover:bg-[#F28123]">about</Link>
+                <Link to ="/Cart" className="block py-6 uppercase  hover:bg-[#F28123]">cart</Link>
+                <Link to ="/Checkout" className="block py-6 uppercase  hover:bg-[#F28123]">check out</Link>
+                <Link to ="/Contact" className="block py-6 uppercase  hover:bg-[#F28123]">contact</Link>
+                <Link to ="/News" className="block py-6 uppercase  hover:bg-[#F28123]">news</Link>
+                <Link to ="/Shop" className="block py-6 uppercase  hover:bg-[#F28123]">shop</Link>
             </div>
             )}
 
@@ -75,8 +77,8 @@ const DropNav = () => {
             </div>
             {newsOpen && (
             <div className="bg-[#00000044] text-lg text-white p-4 transition-all duration-500 ease-in-out">
-                <a href={link} className="block py-6 uppercase hover:bg-[#F28123">news</a>
-                <a href={link} className="block py-6 uppercase hover:bg-[#F28123">single news</a>
+                <Link to="/" className="block py-6 uppercase hover:bg-[#F28123">news</Link>
+                <Link to="/Single_News" className="block py-6 uppercase hover:bg-[#F28123">single news</Link>
             </div>
             )}
 
@@ -97,10 +99,10 @@ const DropNav = () => {
             </div>
                 {shopOpen &&(
                     <div className="bg-[#00000044] text-lg text-white p-4 transition-all duration-500 ease-in-out">
-                    <a href={link} className="block py-6 uppercase hover:bg-[#F28123]">shop</a>
-                    <a href={link} className="block py-6 uppercase hover:bg-[#F28123]">checkout</a>
-                    <a href={link} className="block py-6 uppercase hover:bg-[#F28123]">single product</a>
-                    <a href={link} className="block py-6 uppercase hover:bg-[#F28123]">cart</a>
+                    <Link to="/" className="block py-6 uppercase hover:bg-[#F28123]">shop</Link>
+                    <Link to="/Checkout" className="block py-6 uppercase hover:bg-[#F28123]">checkout</Link>
+                    <Link to="/Single_News" className="block py-6 uppercase hover:bg-[#F28123]">single product</Link>
+                    <Link to="/Cart" className="block py-6 uppercase hover:bg-[#F28123]">cart</Link>
 
                 </div>
                 )}

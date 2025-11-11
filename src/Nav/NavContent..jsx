@@ -61,7 +61,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
               <Link to="/404" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">404 page</Link>
               <Link to="/About" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">about</Link>
               <Link to="/Cart" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">cart</Link>
-              <Link to="/checkout" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">check out</Link>
+              <Link to="/Checkout" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">check out</Link>
               <Link to="/Contact" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">contact</Link>
               <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">news</Link>
               <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">shop</Link>
@@ -79,10 +79,10 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
                   : "opacity-0 translate-y-2 invisible"
               }`}
             >
-              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
+              <Link to="/News" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
                 news
               </Link>
-              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
+              <Link to="/Single_News" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
                 single news
               </Link>
             </div>
@@ -105,7 +105,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
               <Link to="/checkout" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">
                 check out
               </Link>
-              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
+              <Link to="/Single_Product" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
                 single product
               </Link>
               <Link to="/Cart" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">

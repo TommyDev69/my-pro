@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const MarketSection = ({details}) => {
     return ( 
           
-            <div className="grid w-full grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center px-6  ">
+            <div className="grid w-full md:container grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center px-6  ">
                 {details.map((items) =>(
                     <div className="flex flex-col justify-center items-center  border-2 rounded-2xl py-4  md:w-11/12 hover:shadow-2xl shadow-inner shadow-[rgb(242,129,35)]" key={items.id}>
                         <img src={items.Image} alt={items.Name} className="w-1c/2" />
