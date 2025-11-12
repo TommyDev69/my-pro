@@ -39,7 +39,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
             </div>
           </div>
 
-          <Link to="/About" className="capitalize text-2xl transition hover:text-[#F28123]">about</Link>
+          <Link to="/About" className="capitalize md:text-xl text-[14px] transition hover:text-[#F28123]">about</Link>
 
           {/* PAGE DROPDOWN */}
           <div
