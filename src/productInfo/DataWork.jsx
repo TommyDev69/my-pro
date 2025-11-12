@@ -50,7 +50,7 @@ export default function DataWork({ HandleVideo, closeModal, isPlaying, videoRef,
             {/* Close Button */}
             <button
               onClick={closeModal}
-              className="absolute top-3 right-3 text-white bg-[rgb(242,129,35)] hover:bg-orange-600 px-3 py-1 rounded-full font-bold text-lg transition-all"
+              className="absolute top-3 right-3 text-white bg-[#000000] hover:bg-orange-600 px-3 py-1 rounded-full font-bold text-lg transition-all"
             >
               ✕
             </button>
