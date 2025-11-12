@@ -28,6 +28,8 @@ import MainSingle from './single product/MainSingle';
 import MainPro from './product single/MainPro';
 import MainSingleNews from './Single News/MainSingleNews';
 import MainFeed from './news feed/MainFeed';
+import NewsHeader from './News head/NewsHeader';
+import MainShopper from './shopper/MainShopper';
 
 
 function App() {
@@ -124,9 +126,22 @@ function App() {
 
             <Route path = '/News' caseSensitive = {false} element = {<>
             <NavContainer />
-              <MainPro />
-              <MainFeed />
+              <NewsHeader />
+              <MainFeed />    
+              <Mainslide />
+              <MainFooter />
+              <MainLastfooter />
             </>}/>
+
+            <Route path = "/Shop"  caseSensitive={false} element = {<>
+            <NavContainer />
+              <NewsHeader />
+              <MainShopper />
+              <Mainslide />
+              <MainFooter />
+              <MainLastfooter />
+              
+            </>} />
             
         </Routes>
       </div>

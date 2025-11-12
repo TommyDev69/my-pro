@@ -63,15 +63,15 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
               <Link to="/Cart" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">cart</Link>
               <Link to="/Checkout" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">check out</Link>
               <Link to="/Contact" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">contact</Link>
-              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">news</Link>
-              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">shop</Link>
+              <Link to="/News" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-b-xl">news</Link>
+              <Link to="/Shop" className="px-4 py-2 hover:bg-[#F28123] capitalize rounded-t-xl">shop</Link>
             </div>
           </div>
 
           {/* OTHER LINKS */}
           <div className="relative group" onMouseEnter={() =>setHover('news')}
              onMouseLeave={() =>setHover(null)}>
-          <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">news</Link>
+          <Link to="/News" className="capitalize text-2xl transition hover:text-[#F28123]">news</Link>
              <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
                 hoverToggle === "news"
@@ -91,7 +91,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
 
           <div className="relative group" onMouseEnter={() =>setHover('shop')}
              onMouseLeave={() =>setHover(null)}>
-          <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">shop</Link>
+          <Link to="/Shop" className="capitalize text-2xl transition hover:text-[#F28123]">shop</Link>
            <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
                 hoverToggle === "shop"
@@ -99,7 +99,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
                   : "opacity-0 translate-y-2 invisible"
               }`}
             >
-              <Link to="/" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
+              <Link to="/Shop" className="px-4 py-2 hover:bg-[#F28123] rounded-t-xl capitalize">
                 shop
               </Link>
               <Link to="/checkout" className="px-4 py-2 hover:bg-[#F28123] rounded-b-xl capitalize">

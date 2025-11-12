@@ -55,6 +55,7 @@
 
 .December{
   min-height:30vh;
+  width: 100%;
   background-image: url('./image/1.jpg');
    background-position:center;
    /* background-size:; */

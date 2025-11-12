@@ -57,7 +57,7 @@ const DropNav = () => {
             {pageOpen && (
             <div className="bg-[#00000044] text-lg text-white px-4">
                 <Link to ="/404" className="block py-6 uppercase hover:bg-[#F28123]">404 page</Link>
-                <Link to ="/a   bout" className="block py-6 uppercase  hover:bg-[#F28123]">about</Link>
+                <Link to ="/about" className="block py-6 uppercase  hover:bg-[#F28123]">about</Link>
                 <Link to ="/Cart" className="block py-6 uppercase  hover:bg-[#F28123]">cart</Link>
                 <Link to ="/Checkout" className="block py-6 uppercase  hover:bg-[#F28123]">check out</Link>
                 <Link to ="/Contact" className="block py-6 uppercase  hover:bg-[#F28123]">contact</Link>
@@ -77,20 +77,20 @@ const DropNav = () => {
             </div>
             {newsOpen && (
             <div className="bg-[#00000044] text-lg text-white p-4 transition-all duration-500 ease-in-out">
-                <Link to="/" className="block py-6 uppercase hover:bg-[#F28123">news</Link>
+                <Link to="/News" className="block py-6 uppercase hover:bg-[#F28123">news</Link>
                 <Link to="/Single_News" className="block py-6 uppercase hover:bg-[#F28123">single news</Link>
             </div>
             )}
 
             {/* CONTACT */}
             <div className="flex p-5 hover:bg-[#F28123] transition-all">
-            <a href={link} className="capitalize w-11/12 text-2xl">contact</a>
+            <Link to="/Contact" className="capitalize w-11/12 text-2xl">contact</Link>
             
             </div>
 
             {/* SHOP */}
             <div className="flex p-5 hover:bg-[#F28123] transition-all">
-            <a href={link} className="capitalize w-11/12 text-2xl">shop</a>
+            <Link to="/Shop" className="capitalize w-11/12 text-2xl">shop</Link>
             <FontAwesomeIcon
                 className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 p-2 rounded-xl"
                 icon={shopOpen ? faMinus : faPlus}
@@ -99,7 +99,7 @@ const DropNav = () => {
             </div>
                 {shopOpen &&(
                     <div className="bg-[#00000044] text-lg text-white p-4 transition-all duration-500 ease-in-out">
-                    <Link to="/" className="block py-6 uppercase hover:bg-[#F28123]">shop</Link>
+                    <Link to="/Shop" className="block py-6 uppercase hover:bg-[#F28123]">shop</Link>
                     <Link to="/Checkout" className="block py-6 uppercase hover:bg-[#F28123]">checkout</Link>
                     <Link to="/Single_News" className="block py-6 uppercase hover:bg-[#F28123]">single product</Link>
                     <Link to="/Cart" className="block py-6 uppercase hover:bg-[#F28123]">cart</Link>
