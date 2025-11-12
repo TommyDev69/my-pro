@@ -84,7 +84,7 @@
 
                 {/* CONTACT */}
                 <div className="flex p-5 hover:bg-[#F28123] transition-all">
-                <Link to="/Contact" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[18px]">contact</Link>
+                <Link to="/Contact" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">contact</Link>
                 
                 </div>
 
