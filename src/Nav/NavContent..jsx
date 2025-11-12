@@ -11,7 +11,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
     <>
       {/* Desktop Navigation */}
       <div className="hidden md:flex">
-        <div className="relative content flex md:flex-row gap-6 text-2xl text-white md:py-10 py-14">
+        <div className="relative content flex md:flex-row gap-6 md:text-xl text-[20px] text-white md:py-10 py-14">
 
           {/* HOME DROPDOWN */}
           <div
@@ -19,7 +19,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
             onMouseEnter={() => setHover("home")}
             onMouseLeave={() => setHover(null)}
           >
-            <Link to="/" className="capitalize text-2xl transition font-bold hover:text-[#F28123]">
+            <Link to="/" className="capitalize md:text-xl text-[20px] transition font-bold hover:text-[#F28123]">
               home
             </Link>
 
@@ -47,7 +47,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
             onMouseEnter={() => setHover("page")}
             onMouseLeave={() => setHover(null)}
           >
-            <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">
+            <Link to="/" className="capitalize md:text-xl text-[20px] transition hover:text-[#F28123]">
               page
             </Link>
 
@@ -71,7 +71,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
           {/* OTHER LINKS */}
           <div className="relative group" onMouseEnter={() =>setHover('news')}
              onMouseLeave={() =>setHover(null)}>
-          <Link to="/News" className="capitalize text-2xl transition hover:text-[#F28123]">news</Link>
+          <Link to="/News" className="capitalize md:text-xl text-[20px] transition hover:text-[#F28123]">news</Link>
              <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
                 hoverToggle === "news"
@@ -87,11 +87,11 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
               </Link>
             </div>
           </div>
-          <Link to="/Contact" className="capitalize text-2xl transition hover:text-[#F28123]">contact</Link>
+          <Link to="/Contact" className="capitalize md:text-xl text-[20px] transition hover:text-[#F28123]">contact</Link>
 
           <div className="relative group" onMouseEnter={() =>setHover('shop')}
              onMouseLeave={() =>setHover(null)}>
-          <Link to="/Shop" className="capitalize text-2xl transition hover:text-[#F28123]">shop</Link>
+          <Link to="/Shop" className="capitalize md:text-xl text-[20px] transition hover:text-[#F28123]">shop</Link>
            <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
                 hoverToggle === "shop"
@@ -116,7 +116,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
 
          <div className="relative group" onMouseEnter={() =>setHover('register')}
              onMouseLeave={() =>setHover(null)}>
-          <Link to="/" className="capitalize text-2xl transition hover:text-[#F28123]">register</Link>
+          <Link to="/" className="capitalize md:text-xl text-[20px] transition hover:text-[#F28123]">register</Link>
            <div
               className={`absolute left-0 top-full mt-2 bg-white text-black px-2 rounded-xl shadow-lg flex flex-col w-56 transition-all duration-300 z-50 ${
                 hoverToggle === "register"
