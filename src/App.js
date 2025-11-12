@@ -30,6 +30,7 @@ import MainSingleNews from './Single News/MainSingleNews';
 import MainFeed from './news feed/MainFeed';
 import NewsHeader from './News head/NewsHeader';
 import MainShopper from './shopper/MainShopper';
+import MainHead from './shop head/MainHead';
 
 
 function App() {
@@ -135,7 +136,7 @@ function App() {
 
             <Route path = "/Shop"  caseSensitive={false} element = {<>
             <NavContainer />
-              <NewsHeader />
+              <MainHead />
               <MainShopper />
               <Mainslide />
               <MainFooter />

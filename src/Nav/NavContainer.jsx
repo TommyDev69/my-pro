@@ -8,6 +8,9 @@ const NavContainer = () => {
   const[openToggle, setToggle] =useState(false)
   const [hoverToggle, setHoverToggle] = useState(null)
   // const[openMenu, setOpenMenu] =useState(false);
+  const handleLinkClick = () => {
+    setToggle(false);
+  };
 
  return(
 
@@ -17,7 +20,7 @@ const NavContainer = () => {
       <NavBrand  />
       <NavContent hoverToggle={hoverToggle} setHover={setHoverToggle} openToggle={openToggle} onMenuClick={() => setToggle(!openToggle)} />
     </div>
-         {openToggle && <DropNav/>}
+         {openToggle && <DropNav handleLinkClick={handleLinkClick}/>}
  </div>
   )
 }
