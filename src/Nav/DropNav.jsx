@@ -41,7 +41,7 @@
 
                 {/* ABOUT */}
                 <div className="flex p-5 hover:bg-[#F28123] transition-all">
-                <Link to ="/About" onClick={handleLinkClick} className="capitalize w-11/12 text-2xl">about</Link>
+                <Link to ="/About" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[14px]">about</Link>
                 </div>
                 
 
