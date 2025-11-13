@@ -21,7 +21,7 @@ const DisplayTime = ({TimeLeft}) => {
                 <p className="text-[10px] md:text-xl capitalize">days</p>
             </div>
             <div className="flex flex-col p-1 border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
-                <p className="md:text-[18px] text-[11px] font-bold  md:font-bitcount ">{TimeLeft.hours}</p>
+                <p className="md:text-[18px] text-[10px] font-bold  md:font-bitcount ">{TimeLeft.hours}</p>
                 <p className="text-[10px] md:text-2xl capitalize">hours</p>
             </div>
             <div className="flex flex-col p-1 border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
