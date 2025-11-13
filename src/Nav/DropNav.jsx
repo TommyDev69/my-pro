@@ -23,7 +23,7 @@
 
                 {/* HOME */}
                 <div className="flex bg-[#F28123] p-4">
-                <Link to="/" onClick={handleLinkClick} className="capitalize w-11/12 text-2xl font-bold transition">
+                <Link to="/" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px] font-bold transition">
                     home
                 </Link>
                 {/* <FontAwesomeIcon
@@ -40,22 +40,22 @@
                 )} */}
 
                 {/* ABOUT */}
-                <div className="flex p-4 hover:bg-[#F28123] transition-all">
+                <div className="flex p-3 hover:bg-[#F28123] transition-all">
                 <Link to ="/About" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">about</Link>
                 </div>
                 
 
                 {/* PAGE */}
-                <div className="flex p-4 hover:bg-[#F28123] transition-all">
+                <div className="flex p-3 hover:bg-[#F28123] transition-all">
                 <Link to="/Shop" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">page</Link>
                 <FontAwesomeIcon
-                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 p-2 rounded-xl"
+                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={pageOpen ? faMinus : faPlus}
                     onClick={() => setPageOpen(!pageOpen)}
                 />
                 </div>
                 {pageOpen && (
-                <div className="bg-[#00000044] md:text-xl text-[20px] text-white px-4  duratiovn-500 ease-in-out">
+                <div className="bg-[#00000044] md:text-xl text-[16px] text-white px-3  duratiovn-500 ease-in-out">
                     <Link to ="/404" onClick={handleLinkClick} className="block py-4 uppercase hover:bg-[#F28123]">404 page</Link>
                     <Link to ="/About" onClick={handleLinkClick}  className="block py-4 uppercase  hover:bg-[#F28123]">about</Link>
                     <Link to ="/Cart" onClick={handleLinkClick}  className="block py-4 uppercase  hover:bg-[#F28123]">cart</Link>
@@ -67,38 +67,38 @@
                 )}
 
                 {/* NEWS */}
-                <div className="flex p-5 hover:bg-[#F28123] transition-all">
+                <div className="flex p-3 hover:bg-[#F28123] transition-all">
                 <Link to='/News' onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">news</Link>
                 <FontAwesomeIcon
-                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 p-2 rounded-xl"
+                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={newsOpen ? faMinus : faPlus}
                     onClick={() => setNewsOpen(!newsOpen)}
                 />
                 </div>
                 {newsOpen && (
-                <div className="bg-[#00000044] md:text-xl text-[20px] text-white p-4 transition-all duration-500 ease-in-out">
-                    <Link to="/News" onClick={handleLinkClick} className="block py-4 uppercase hover:bg-[#F28123]">news</Link>
-                    <Link to="/Single_News" onClick={handleLinkClick} className="block py-4 uppercase hover:bg-[#F28123]">single news</Link>
+                <div className="bg-[#00000044] md:text-xl text-[16px] text-white px-3 transition-all duration-500 ease-in-out">
+                    <Link to="/News" onClick={handleLinkClick} className="block py-3 uppercase hover:bg-[#F28123]">news</Link>
+                    <Link to="/Single_News" onClick={handleLinkClick} className="block py-3 uppercase hover:bg-[#F28123]">single news</Link>
                 </div>
                 )}
 
                 {/* CONTACT */}
-                <div className="flex p-4 hover:bg-[#F28123] transition-all">
+                <div className="flex p-3 hover:bg-[#F28123] transition-all">
                 <Link to="/Contact" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">contact</Link>
                 
                 </div>
 
                 {/* SHOP */}
-                <div className="flex p-5 hover:bg-[#F28123] transition-all">
-                <Link to="/Shop" onClick={handleLinkClick} className="capitalize w-11/12 text-2xl">shop</Link>
+                <div className="flex p-3 hover:bg-[#F28123] transition-all">
+                <Link to="/Shop" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">shop</Link>
                 <FontAwesomeIcon
-                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 p-2 rounded-xl"
+                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={shopOpen ? faMinus : faPlus}
                     onClick={() => setShopOpen(!shopOpen)}
                     />
                 </div>
                     {shopOpen &&(
-                        <div className="bg-[#00000044] text-[20px] text-white p-4 transition-all duration-500 ease-in-out">
+                        <div className="bg-[#00000044] md:text-xl text-[16px] text-white px-3 transition-all duration-500 ease-in-out">
                         <Link to="/Shop" onClick={handleLinkClick} className="block py-4 uppercase hover:bg-[#F28123]">shop</Link>
                         <Link to="/Checkout" onClick={handleLinkClick} className="block py-4 uppercase hover:bg-[#F28123]">checkout</Link>
                         <Link to="/Single_News" onClick={handleLinkClick} className="block py-4 uppercase hover:bg-[#F28123]">single product</Link>
@@ -108,16 +108,16 @@
                     )}
         
 
-                <div className="flex p-5 hover:bg-[#F28123] transition-all">
-                <a href={link} className="capitalize w-11/12 text-[20px]">regiser</a>
+                <div className="flex p-3 hover:bg-[#F28123] transition-all">
+                <a href={link} className="capitalize w-11/12 md:text-xl text-[20px]">regiser</a>
                 <FontAwesomeIcon
-                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 p-2 rounded-xl"
+                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={newsOpen ? faMinus : faPlus}
                     onClick={() => setRegisterOpen(!registerOpen)}
                 />
                 </div>
                 {registerOpen && (
-                    <div className="bg-[#00000044] text-[20px] text-white p-4 transition-all duration-500 ease-in-out">
+                    <div className="bg-[#00000044] md:text-xl text-[16px] text-white px-3 transition-all duration-500 ease-in-out">
                         <a href={link} className="block py-4 uppercase hover:bg-[#F28123]">sign up</a>
                         <a href={link} className="block py-4 uppercase hover:bg-[#F28123]">sign in</a>
                     </div>

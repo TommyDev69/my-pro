@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
-  const link = "#";
+ 
 
   return (
     <>
