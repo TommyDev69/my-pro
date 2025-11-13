@@ -19,7 +19,7 @@ export default function AllNews({AllData, icon_1, icon_2}) {
                             </div>
 
                             <p className="md:text-[14px] text-[montserrat] text-slate-600 ">{blog.content}</p>
-                            <button className="md:text-[18px]  pt-6 hover:text-[rgb(242,129,35)]">{blog.but} <FontAwesomeIcon icon={blog.icon} className="md:text-[10px] md:mb-1" /></button>
+                            <button className="md:text-[14px] text-10  pt-6 hover:text-[rgb(242,129,35)]">{blog.but} <FontAwesomeIcon icon={blog.icon} className="md:text-[10px] text-8 md:mb-1" /></button>
                         </div>
                     </div>
 
