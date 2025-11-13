@@ -109,7 +109,7 @@
         
 
                 <div className="flex p-3 hover:bg-[#F28123] transition-all">
-                <a href={link} className="capitalize w-11/12 md:text-xl text-[20px]">regiser</a>
+                <a href={link} className="capitalize w-11/12 md:text-xl text-[20px]">register</a>
                 <FontAwesomeIcon
                     className="py-2 cursor-pointer text-[14px] bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={newsOpen ? faMinus : faPlus}
