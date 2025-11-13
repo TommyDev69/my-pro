@@ -15,13 +15,13 @@ const DisplayTime = ({TimeLeft}) => {
     );
   }
     return ( 
-        <div className="flex items-center  space-x-1 md:space-x-4 ">
+        <div className="flex items-center  space-x-1 md:space-x-3 ">
             <div className="flex flex-col  border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
-                <p className="md:text-[20px] text-[16px] font-bold p-2 md:p-4 md:font-bitcount ">{TimeLeft.days} </p>
-                <p className="text-sm md:text-2xl capitalize">days</p>
+                <p className="md:text-[20px] text-[12px] font-bold p-2 md:p-3 md:font-bitcount ">{TimeLeft.days} </p>
+                <p className="text-sm md:text-xl capitalize">days</p>
             </div>
             <div className="flex flex-col  border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
-                <p className="md:text-[20px] text-[16px] font-bold p-2 md:p-4 md:font-bitcount ">{TimeLeft.hours}</p>
+                <p className="md:text-[18px] text-[16px] font-bold p-2 md:p-4 md:font-bitcount ">{TimeLeft.hours}</p>
                 <p className="text-sm md:text-2xl capitalize">hours</p>
             </div>
             <div className="flex flex-col  border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">

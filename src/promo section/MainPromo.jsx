@@ -46,7 +46,7 @@ const MainPromo = () => {
     const content = 'Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant'
     return (  
         <div className="flex relative justifby-around items-center promo w-full ">
-            <div className="flex relatiwve justify-center md:items-center min-w-60 md:min-w-[50%]">
+            <div className="flex relatiwve justify-center md:items-center min-w-52 md:min-w-[50%]">
                 <div className="  absolute top-[70px] md:top-[40px] left-[4px] md:left-[100px] flex flex-col  rounded-full p-2 bg-[rgba(209,223,18,0.95)]">
 
                   <div className=" rounded-full  bg-[rgb(242,129,35)] p-4 md:p-6 text-white font-worksans font-bold">
@@ -56,7 +56,7 @@ const MainPromo = () => {
                   </div>
                 </div>
 
-                <img src={image} alt="fruit" className=' md:w-[70%]' />
+                <img src={image} alt="fruit" className=' md:w-[50%]' />
             </div>
          <PromoInfo title={Ceo} content={content}  TimeLeft = {TimeLeft}  />
         </div>
