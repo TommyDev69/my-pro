@@ -8,7 +8,7 @@
     const link = "#";
 
     // Each menu item has its own toggle
-    const [homeOpen, setHomeOpen] = useState(false);
+    // const [homeOpen, setHomeOpen] = useState(false);
     //   const [aboutOpen, setAboutOpen] = useState(false);
     const [pageOpen, setPageOpen] = useState(false);
     const [newsOpen, setNewsOpen] = useState(false);

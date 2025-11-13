@@ -8,7 +8,7 @@ export default function AllNews({AllData, icon_1, icon_2}) {
 
             <div className="grid grid-cols-2 md:grid-cols-3 my-24 md:container md:mx-auto mx-3 gap-4 md:gap-5 py-10 ">
                 {AllData.map((blog)=>(
-                    <div className="flex-grow-0 w-full  md:w-full mxc-auto md:mx-0  hover:border-none hover:shadow-[rgb(242,129,35)] shadow-[black] shadow-xl border-2 rounded-3xl" key={blog.id}>
+                    <div className="flex-grow-0 w-full  md:w-full  md:mx-0  hover:border-none hover:shadow-[rgb(242,129,35)] shadow-[black] shadow-xl border-2 rounded-3xl" key={blog.id}>
                         <img src={blog.image} alt={blog.news} className="w-full" />
                         <div className="md:px-4 px-4 py-8">
                             <p className="md:text-[14px] text-10 text-worksans font-bold text-[#051922cc]">{blog.topic}</p>

@@ -2,11 +2,10 @@ import { useState } from 'react'
 import Stawberry from '../image/products/product-img-1.jpg'
 import Berry from '../image/products/product-img-2.jpg'
 import Lemon from '../image/products/product-img-3.jpg'
-// import faX  from '@fortawesome/free-solid-svg-icons'
-// import { faXma } from '@fortawesome/free-solid-svg-icons/faX'
+
 import Cart from './Cart'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-// faXmark
+
 
 
 const MainCart = () => {
