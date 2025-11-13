@@ -7,7 +7,7 @@ import HeroBg from '../image/hero-bg-3.jpg'
 export default function ContactDetails() {
   return (
     <div
-      className="bg-cover  rounded-3xl md:w-3/12 my-14  pb-10 bg-center md:h-[70vh] flex flex-col text-black justifey-center pl-6"
+      className="bg-cover  rounded-3xl md:w-3/12 my-14  pb-10 bg-center md:h-[72vh] flex flex-col text-black justifey-center pl-6"
       style={{ backgroundImage: `url(${HeroBg})` }} 
     >
       <div className="flex items-center pt-6  space-x-3  text-[20px]  rounded-xl">
@@ -27,7 +27,7 @@ export default function ContactDetails() {
       <div className="flex ">
 
        <p className="not-italic pl-14 md:pl-12 lg:pl-12 md:text-[10px] text-[#5a5858] ">MON - FRIDAY:</p>
-       <p className="not-italic  md:text-[14px] pl-1 text-[#5a5858] "> 8 to 9 PM</p>
+       <p className="not-italic  md:text-[10px] pl-1 text-[#5a5858] "> 8 to 9 PM</p>
       </div>
       <div className="flex ">
 
