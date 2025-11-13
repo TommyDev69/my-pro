@@ -13,8 +13,8 @@ export default function AllNews({AllData, icon_1, icon_2}) {
                         <div className="md:px-4 px-4 py-8">
                             <p className="md:text-[14px] text-10 text-worksans font-bold text-[#051922cc]">{blog.topic}</p>
                             <div className="flex my-6 w-full items-center text-pretty justify-aronund text-slate-500">
-                                <p className="md:text-[14px] text-[8px]"><FontAwesomeIcon icon={icon_1} className='text-[14px]' />&nbsp; Admin</p>
-                                <p className="md:text-[14px] text-[8px] md:pl-3 pl-2 "><FontAwesomeIcon icon={icon_2} className='text-[14px]'/>&nbsp; 10 October 2025</p>
+                                <p className="md:text-[12px] text-[8px]"><FontAwesomeIcon icon={icon_1} className='md:text-[12px] text-[10px]' />&nbsp; Admin</p>
+                                <p className="md:text-[12px] text-[8px] md:pl-3 pl-2 "><FontAwesomeIcon icon={icon_2} className='md:text-[12px] text-[10px]'/>&nbsp; 10 October 2025</p>
 
                             </div>
 
