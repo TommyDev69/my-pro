@@ -18,19 +18,19 @@ const DisplayTime = ({TimeLeft}) => {
         <div className="flex items-center  space-x-1 md:space-x-3 ">
             <div className="flex flex-col  p-1 border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
                 <p className="md:text-[20px] text-[11px] font-bold  md:font-bitcount ">{TimeLeft.days} </p>
-                <p className="text-sm md:text-xl capitalize">days</p>
+                <p className="text-[14px] md:text-xl capitalize">days</p>
             </div>
             <div className="flex flex-col p-1 border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
                 <p className="md:text-[18px] text-[11px] font-bold  md:font-bitcount ">{TimeLeft.hours}</p>
-                <p className="text-sm md:text-2xl capitalize">hours</p>
+                <p className="text-[14px] md:text-2xl capitalize">hours</p>
             </div>
             <div className="flex flex-col p-1 border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
                 <p className="md:text-[20px] text-[11px] font-bold  md:font-bitcount">{TimeLeft.mins}</p>
-                <p className="text-sm md:text-2xl capitalize">mins</p>
+                <p className="text-[14px] md:text-2xl capitalize">mins</p>
             </div>
             <div className="flex flex-col p-1 border-2 border-[rgb(242,129,35)] items-center  justify-center text-[rgb(242,129,35)]">
                 <p className="md:text-[20px] text-[11px] font-bold  md:font-bitcount">{TimeLeft.secs}</p>
-                <p className="text-sm md:text-2xl capitalize">secs</p>
+                <p className="text-[14px] md:text-2xl capitalize">secs</p>
             </div>
         </div>
      );
