@@ -27,12 +27,12 @@ export default function ContactDetails() {
       <div className="flex ">
 
        <p className="not-italic pl-14 md:pl-12 lg:pl-12 md:text-[10px] text-[#5a5858] ">MON - FRIDAY:</p>
-       <p className="not-italic  text-[14px] pl-1 text-[#5a5858] "> 8 to 9 PM</p>
+       <p className="not-italic  md:text-[14px] pl-1 text-[#5a5858] "> 8 to 9 PM</p>
       </div>
       <div className="flex ">
 
        <p className="not-italic pl-14 md:pl-12 lg:pl-12 md:text-[10px] text-[#5a5858] ">SAT - SUN: </p>
-       <p className="not-italic  text-[10px] pl-1 text-[#5a5858] ">10 to 8 PM</p>
+       <p className="not-italic  md:text-[10px] pl-1 text-[#5a5858] ">10 to 8 PM</p>
       </div>
 
        <div className="flex items-center pt-6  space-x-3  text-[20px]  rounded-xl">
@@ -44,12 +44,12 @@ export default function ContactDetails() {
       <div className="flex ">
 
        <p className="not-italic pl-14 md:pl-12 lg:pl-12 md:text-[10px] text-[#5a5858] capitalize">phone:</p>
-       <p className="not-italic text-[10px] pl-1 text-[#5a5858] "> +234 9026-274950</p>
+       <p className="not-italic md:text-[10px] pl-1 text-[#5a5858] "> +234 9026-274950</p>
       </div>
       <div className="flex ">
 
        <p className="not-italic pl-14 md:pl-12 lg:pl-12 md:text-[10px] text-[#5a5858] capitalize">email </p>
-       <p className="not-italic text-[10px] pl-1 text-[#5a5858] capitalize">sunnevian4life@gmail.com</p>
+       <p className="not-italic md:text-[10px] pl-1 text-[#5a5858] capitalize">sunnevian4life@gmail.com</p>
       </div>
 
     </div>
