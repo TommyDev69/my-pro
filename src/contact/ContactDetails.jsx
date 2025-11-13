@@ -43,13 +43,13 @@ export default function ContactDetails() {
       </div>
       <div className="flex ">
 
-       <p className="not-italic pl-14 text-[15px] text-[#5a5858] capitalize">phone:</p>
-       <p className="not-italic  text-[15px] pl-1 text-[#5a5858] "> +234 9026-274950</p>
+       <p className="not-italic pl-14 text-[13px] text-[#5a5858] capitalize">phone:</p>
+       <p className="not-italic  md:text-[15px] pl-1 text-[#5a5858] "> +234 9026-274950</p>
       </div>
       <div className="flex ">
 
-       <p className="not-italic pl-14 text-[15px] text-[#5a5858] capitalize">email </p>
-       <p className="not-italic  text-[15px] pl-1 text-[#5a5858] capitalize">sunnevian4life@gmail.com</p>
+       <p className="not-italic pl-14 text-[13px] text-[#5a5858] capitalize">email </p>
+       <p className="not-italic  text-[13px] pl-1 text-[#5a5858] capitalize">sunnevian4life@gmail.com</p>
       </div>
 
     </div>
