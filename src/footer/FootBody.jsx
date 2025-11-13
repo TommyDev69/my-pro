@@ -59,8 +59,8 @@ export default function FootBody({About, getInTouch, Page,Subscribe, iconic, ico
             <p className="md:text-[14px] text-white w-full">{subscribe.content}</p>
             <form className="py-5">
                 <div className="py-4 flex">
-                    <input type="email" placeholder='Email' className='md:p-2 focus:p-4 text-[8px]  md:text-[9px] rounded-xl focus:placeholder-[rgb(242,129,35)] focus-within:bg-[#051922cc] focus-within: text-white border-[#051922cc]' />
-                    <button  className='border-2 md:cmx-2 border-slate-500 rounded-xl md:py-4 md:px-4 px-2 md:text-[10px] text-[rgb(242,129,35)]'><FontAwesomeIcon icon={icon_2} /></button>
+                    <input type="email" placeholder='Email' className='md:p-2 focus:p-4 text-[8px]  md:text-[8px] rounded-xl focus:placeholder-[rgb(242,129,35)] focus-within:bg-[#051922cc] focus-within: text-white border-[#051922cc]' />
+                    <button  className='border-2 md:cmx-2 border-slate-500 rounded-xl md:py-4 md:px-4 px-2 md:text-[9px] text-[rgb(242,129,35)]'><FontAwesomeIcon icon={icon_2} /></button>
                 </div>
             </form>
 
