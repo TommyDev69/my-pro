@@ -5,7 +5,7 @@ import Aggregate from './Aggregate'
 
     export default function Cart({Heading, Title, Total, DeleteButton,updateQuantity}) {
     return (
-        <div className='py-16 flex flex-col md:flex md:flex-row md:flex-gdrow-0 gap-8 '>
+        <div className='py-16 flex flex-col md:flex md:flex-row md:flex-gdrow-0 gap-8 landscape:w-full w-full'>
        <div className='md:w-7/12  mx-auto w-full md:mx-0 '>
          <table border={2} className="bordder-t border-red-600 bg-slawte-950 text-white md:w-10/12   mx-auto md:mx-20 w-[90%]  " celwlPadding={5} cellSpacwing={4}>
             <thead>
