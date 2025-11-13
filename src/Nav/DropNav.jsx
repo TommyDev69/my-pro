@@ -49,7 +49,7 @@
                 <div className="flex p-3 hover:bg-[#F28123] transition-all">
                 <Link to="/Shop" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">page</Link>
                 <FontAwesomeIcon
-                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
+                    className="py-2 text-[14px] cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={pageOpen ? faMinus : faPlus}
                     onClick={() => setPageOpen(!pageOpen)}
                 />
@@ -70,7 +70,7 @@
                 <div className="flex p-3 hover:bg-[#F28123] transition-all">
                 <Link to='/News' onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">news</Link>
                 <FontAwesomeIcon
-                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
+                    className="py-2 cursor-pointer text-[14px] bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={newsOpen ? faMinus : faPlus}
                     onClick={() => setNewsOpen(!newsOpen)}
                 />
@@ -92,7 +92,7 @@
                 <div className="flex p-3 hover:bg-[#F28123] transition-all">
                 <Link to="/Shop" onClick={handleLinkClick} className="capitalize w-11/12 md:text-xl text-[20px]">shop</Link>
                 <FontAwesomeIcon
-                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
+                    className="py-2 cursor-pointer text-[14px] bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={shopOpen ? faMinus : faPlus}
                     onClick={() => setShopOpen(!shopOpen)}
                     />
@@ -111,7 +111,7 @@
                 <div className="flex p-3 hover:bg-[#F28123] transition-all">
                 <a href={link} className="capitalize w-11/12 md:text-xl text-[20px]">regiser</a>
                 <FontAwesomeIcon
-                    className="py-2 cursor-pointer  bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
+                    className="py-2 cursor-pointer text-[14px] bg-slate-700 border-[#ccc] border-2 px-2 rounded-xl"
                     icon={newsOpen ? faMinus : faPlus}
                     onClick={() => setRegisterOpen(!registerOpen)}
                 />

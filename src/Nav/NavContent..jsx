@@ -145,7 +145,7 @@ const NavContent = ({ onMenuClick, openToggle, hoverToggle, setHover}) => {
         <FontAwesomeIcon
           icon={openToggle ? faXmark : faBars}
           onClick={onMenuClick}
-          className="text-[16px] text-white transition duration-300"
+          className="text-[20px] text-white transition duration-300"
         />
       </div>
     </>
