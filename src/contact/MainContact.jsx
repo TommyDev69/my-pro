@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 const MainContact = () => {
     const [contact, setContact] = useState('')
     return ( 
-        <div>
+        <div className="bg-red-500">
         <ContactForm  title='you can write to us!'/>
         </div>
 

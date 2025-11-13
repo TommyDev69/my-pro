@@ -7,7 +7,7 @@ import HeroBg from '../image/hero-bg-3.jpg'
 export default function ContactDetails() {
   return (
     <div
-      className="bg-cover  rounded-3xl md:w-4/12 my-14  pb-10 bg-center h-[60vh] flex flex-col text-black justifey-center pl-6"
+      className="bg-cover  rounded-3xl md:w-3/12 my-14  pb-10 bg-center h-[60vh] flex flex-col text-black justifey-center pl-6"
       style={{ backgroundImage: `url(${HeroBg})` }} 
     >
       <div className="flex items-center pt-6  space-x-3  text-[20px]  rounded-xl">
@@ -16,7 +16,7 @@ export default function ContactDetails() {
           Shop Address 
         </p>
       </div>
-       <address className="not-italic px-14 text-[13px] text-[#5a5858] w-8/12">123 Fruit Lane, Lagos, Nigeria.</address>
+       <address className="not-italic px-14 text-[13px] text-[#5a5858]">123 Fruit Lane, Lagos, Nigeria.</address>
 
         <div className="flex items-center pt-6  space-x-3  text-[20px]  rounded-xl">
         <FontAwesomeIcon icon={faClock} className="text-[#F28123] " />
