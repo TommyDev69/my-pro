@@ -56,7 +56,7 @@ const MainPromo = () => {
                   </div>
                 </div>
 
-                <img src={image} alt="fruit" className=' md:w-[35%]' />
+                <img src={image} alt="fruit" className=' md:w-[50%] w-[80%]' />
             </div>
          <PromoInfo title={Ceo} content={content}  TimeLeft = {TimeLeft}  />
         </div>
