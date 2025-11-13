@@ -4,7 +4,7 @@ import NavContainer from "./NavContainer";
 
 const Main = () => {
     return ( 
-        <div className="navCont container-fluld bg-blend-multiply">
+        <div className=" landscape:w-full navCont container-fluld bg-blend-multiply">
 
             <NavContainer/>
            

@@ -6,7 +6,7 @@ export default function SlideDetail({ Info, index, setIndex }) {
   
 
   return (
-    <div className="w-full flex flex-col items-center justify-center py-40 overflow-hidden">
+    <div className="lanqdscape:bg-green-300 landscape:w-full flex flex-col items-center justify-center py-40 overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={Info[index].id}
